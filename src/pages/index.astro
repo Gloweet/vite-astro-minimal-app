@@ -1,0 +1,35 @@
+---
+
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Astro Minimal App</title>
+        <script type="module">
+            import.meta.env.VITE_APP_VERSION; // ensure env is loaded
+        </script>
+    </head>
+    <body class="bg-gray-50 min-h-screen flex flex-col justify-between">
+        <!-- Main content -->
+        <main class="flex-grow container mx-auto p-6 text-center">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">
+                Astro Minimal App
+            </h1>
+            <p class="text-lg text-left text-gray-600">
+                This application comes with <span class="font-semibold"
+                    >terraform-github-workspace</span
+                > minimal setup.
+            </p>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-100 py-4 text-center text-gray-500">
+            Version: <span id="app-version"
+                >{import.meta.env.VITE_APP_VERSION}</span
+            >
+        </footer>
+    </body>
+</html>
